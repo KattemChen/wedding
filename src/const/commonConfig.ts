@@ -32,7 +32,7 @@ export default {
             title: '我们的相遇',
             desc:
                 '在公司里, 我们第一次在qq上沟通, 处理工作。\n 当时的我：这姑娘怎么蠢萌蠢萌的, 啥都不懂？？\n 当时的她：这哥们这头像, 怕是个30多岁的大叔吧？？',
-            imgSrc: 'https://cdn.zhusun.club/d93cec1bb15b558fde0173ca0a47f38f.png'
+            imgSrc: require('../components/images/5ccd2c785bc1d2733ec1f826742cc41f.jpeg')
         },
         {
             year: '2017年',
@@ -40,7 +40,7 @@ export default {
             day: '27日',
             title: '我们的第一次旅行 - 南京',
             desc: '渐渐的我们的话题越来越多, \n我觉得她是蠢比, \n她觉得我是丑比, \n便相约端午一起去南京旅行',
-            imgSrc: 'https://cdn.zhusun.club/nanjing.jpeg'
+            imgSrc: require('../components/images/5ccd2c785bc1d2733ec1f826742cc41f.jpeg')
         },
         {
             year: '2017年',
@@ -48,7 +48,7 @@ export default {
             day: '15日',
             title: '我们在一起了！',
             desc: '',
-            imgSrc: 'https://cdn.zhusun.club/5ccd2c785bc1d2733ec1f826742cc41f.jpeg'
+            imgSrc: require('../components/images/5ccd2c785bc1d2733ec1f826742cc41f.jpeg')
         },
         {
             year: '2017年',
@@ -57,7 +57,7 @@ export default {
             title: '吵架送花约定',
             desc:
                 '我们约定：以后平时送花, 就想送就送。 \n如果两个人吵架了, 第二天就一定要互相送花, 花语就是答案, 送花之后就要和解。\n然而我第一次送你的居然是个花篮....',
-            imgSrc: 'https://cdn.zhusun.club/flower_1.jpeg'
+            imgSrc: require('../components/images/5ccd2c785bc1d2733ec1f826742cc41f.jpeg')
         },
         {
             year: '2018年',
@@ -66,7 +66,7 @@ export default {
             title: '情人节 + 生日',
             desc:
                 '不知道该送给你什么礼物, 觉得送什么都不能表达我的心意。\n于是买了一大堆, 裙子鞋子小戒指! \n我最喜欢的其实还是这个照片墙',
-            imgSrc: 'https://cdn.zhusun.club/picture_wall_new.jpeg'
+            imgSrc: require('../components/images/5ccd2c785bc1d2733ec1f826742cc41f.jpeg')
         },
         {
             year: '2018年',
@@ -74,7 +74,7 @@ export default {
             day: '29日',
             title: '一起回我家见父母',
             desc: '爸爸妈妈特别开心, \n自己养的猪终于学会拱白菜了',
-            imgSrc: 'https://cdn.zhusun.club/51.jpeg'
+            imgSrc: require('../components/images/5ccd2c785bc1d2733ec1f826742cc41f.jpeg')
         },
         {
             year: '2018年',
@@ -82,7 +82,7 @@ export default {
             day: '15日',
             title: '在一起一周年！',
             desc: '',
-            imgSrc: 'https://cdn.zhusun.club/1year.jpeg'
+            imgSrc: require('../components/images/5ccd2c785bc1d2733ec1f826742cc41f.jpeg')
         },
         {
             year: '2018年',
@@ -90,7 +90,7 @@ export default {
             day: '18日',
             title: '佳佳一家来北京',
             desc: '叔叔阿姨姐姐他们一起来北京游玩\n圆满完成接待任务！！',
-            imgSrc: 'https://cdn.zhusun.club/family.jpeg'
+            imgSrc: require('../components/images/5ccd2c785bc1d2733ec1f826742cc41f.jpeg')
         },
         {
             year: '2018年',
@@ -99,7 +99,7 @@ export default {
             title: '家里多了个小生命',
             desc:
                 '同事家里产了一窝猫崽！\n一直想养一只猫, 又怕养不好。\n转头一想, 以后还得养孩子呢, 权当先实习一波...\n取名：佩奇',
-            imgSrc: 'https://cdn.zhusun.club/cat.jpeg'
+            imgSrc: require('../components/images/5ccd2c785bc1d2733ec1f826742cc41f.jpeg')
         },
         {
             year: '2018年',
@@ -107,7 +107,7 @@ export default {
             day: '08日',
             title: '欢乐谷',
             desc: '来北京一年多了, 工作有点累\n但是身边有人陪伴, 一起来欢乐谷玩一下！\n美滋滋',
-            imgSrc: 'https://cdn.zhusun.club/huanlegu.jpeg'
+            imgSrc: require('../components/images/5ccd2c785bc1d2733ec1f826742cc41f.jpeg')
         },
         {
             year: '2018年',
@@ -115,7 +115,7 @@ export default {
             day: '20日',
             title: '佩奇',
             desc: '佩奇长残了',
-            imgSrc: 'https://cdn.zhusun.club/pig.jpeg'
+            imgSrc: require('../components/images/5ccd2c785bc1d2733ec1f826742cc41f.jpeg')
         },
         {
             year: '2019年',
@@ -124,7 +124,7 @@ export default {
             title: '上海旅行',
             desc:
                 '今年的旅行来到了上海, 来到了迪士尼\n晚上放烟花前还碰到一个小妹妹找不到妈妈了, 我们一起帮忙打电话找\n最后小妹妹爷爷妈妈冲了过来把她抱走了',
-            imgSrc: 'https://cdn.zhusun.club/dishini_new.jpeg'
+            imgSrc: require('../components/images/5ccd2c785bc1d2733ec1f826742cc41f.jpeg')
         },
         {
             year: '2020年',
@@ -132,7 +132,7 @@ export default {
             day: '11日',
             title: '求婚',
             desc: '今天公司开年会, 毛奖都没抽到！\n年会后疯狂赶回家, 布置求婚现场！\n求婚成功~',
-            imgSrc: 'https://cdn.zhusun.club/qiuhun_new.jpeg'
+            imgSrc: require('../components/images/5ccd2c785bc1d2733ec1f826742cc41f.jpeg')
         }
     ],
 

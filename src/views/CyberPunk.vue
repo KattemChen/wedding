@@ -75,8 +75,8 @@ export default class NumberSelectMask extends Vue {
         e.stopPropagation();
         const rect = this.$refs.gridBorderContainer.getBoundingClientRect() || null;
 
-        this.maskX = e.pageX - (rect ? rect.x : this.DEFALUT_MASK_X) - (150 / 1500) * document.body.clientWidth;
-        this.maskY = e.pageY - (rect ? rect.y : this.DEFALUT_MASK_Y) - (150 / 1500) * document.body.clientWidth;
+        // this.maskX = e.pageX - (rect ? rect.x : this.DEFALUT_MASK_X) - (150 / 1500) * document.body.clientWidth;
+        // this.maskY = e.pageY - (rect ? rect.y : this.DEFALUT_MASK_Y) - (150 / 1500) * document.body.clientWidth;
     }
 
     handleMouseLeave() {
@@ -181,7 +181,7 @@ body {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 300px;
+    bottom: 10vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
