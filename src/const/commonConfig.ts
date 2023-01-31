@@ -1,6 +1,6 @@
 const avatarSuffix = 'imageView2/1/w/200/h/200/q/75|imageslim'; // 七牛云图片样式, 200*200居中裁剪
 
-const days = Math.floor((Date.now() - new Date('2017/06/16').getTime()) / 1000 / 60 / 60 / 24);
+const days = Math.floor((Date.now() - new Date('2022/06/16').getTime()) / 1000 / 60 / 60 / 24);
 
 export default {
     // Home
