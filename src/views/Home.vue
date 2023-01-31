@@ -4,9 +4,9 @@
         <FixedRouteHeader />
         <CoupleProfile />
         <QuotaFrase />
+        <Gallary />
         <Story />
         <CardCountDown />
-        <Gallary />
     </div>
 </template>
 

@@ -27,7 +27,7 @@ export default class CardCountDown extends Vue {
     hours: string = '';
     miniutes: string = '';
     seconds: string = '';
-    weddingStartTime = new Date('2020/12/03 10:00:00').getTime();
+    weddingStartTime = new Date('2023/06/05 10:00:00').getTime();
     fullDateString: string = this.timestampToCountDown(this.weddingStartTime - Date.now())!;
     timeInterval = 1000;
 
@@ -36,7 +36,7 @@ export default class CardCountDown extends Vue {
     targetIntersectionObserver: IntersectionObserver | null = null;
 
     mounted() {
-        this.currentTime = this.getServerTime();
+        this.currentTime = new Date().getTime();
         this.filpElementList = document.querySelectorAll('.flip');
         const currentTime = this.timestampToCountDown(this.weddingStartTime - this.currentTime)!;
         const nextTime = this.timestampToCountDown(this.weddingStartTime - this.currentTime - 1000)!;
@@ -72,6 +72,7 @@ export default class CardCountDown extends Vue {
         const nextLeftTime = Math.max(this.weddingStartTime - this.currentTime, 0);
         const oldTimeStr = this.timestampToCountDown(oldLeftTime)!;
         const nextTimeStr = this.timestampToCountDown(nextLeftTime)!;
+
         for (let i = 0; i < this.fillpers.length; i++) {
             if (oldTimeStr[i] === nextTimeStr[i]) {
                 continue;
@@ -105,14 +106,14 @@ export default class CardCountDown extends Vue {
         return this.fullDateString;
     }
 
-    getServerTime() {
-        const xhr = new XMLHttpRequest();
+    // getServerTime() {
+    //     const xhr = new XMLHttpRequest();
 
-        xhr.open('GET', '/', false);
-        xhr.send(null);
-        var date = xhr.getResponseHeader('Date')!;
-        return new Date(date).getTime();
-    }
+    //     xhr.open('GET', '/', false);
+    //     xhr.send(null);
+    //     var date = xhr.getResponseHeader('Date')!;
+    //     return new Date(date).getTime();
+    // }
 
     clearTimer() {
         clearTimeout(this.timer);

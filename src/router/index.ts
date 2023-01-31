@@ -7,6 +7,10 @@ Vue.use(VueRouter);
 const routes: RouteConfig[] = [
     {
         path: '/',
+        component: () => import(/* webpackChunkName: "about" */ '../views/Home.vue')
+    },
+    {
+        path: '/cyber',
         name: 'cyber',
         component: Cyberpunk
     },

@@ -66,10 +66,6 @@ export default class FixedRouteHeader extends Vue {
         {
             name: 'Featured People',
             anchor: '#featured_people'
-        },
-        {
-            name: 'RSVP',
-            anchor: '#rsvp'
         }
     ];
 }
@@ -99,7 +95,7 @@ export default class FixedRouteHeader extends Vue {
             height: 50px;
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: space-around;
 
             .navbar-brand {
                 padding: 15px 15px;

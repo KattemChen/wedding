@@ -52,7 +52,7 @@
                     </div>
                 </li>
             </ul>
-            <div class="story-footer">
+            <div class="story-footer" @click="toAsk">
                 现在我们终于要步入了
                 <span>
                     下一阶段...
@@ -78,11 +78,8 @@ export default class Story extends Vue {
     targetIntersectionObserver: IntersectionObserver[] = [];
     storyList: any[] = CommonConfig.storyList;
 
-    toDetail(index: string) {
-        this.$router.push({
-            path: '/story',
-            query: { id: index }
-        });
+    toDetail(index: string | number) {
+        return;
     }
 
     observeTimeBadge(index: number) {
@@ -109,6 +106,10 @@ export default class Story extends Vue {
         });
 
         this.targetIntersectionObserver[index].observe(target);
+    }
+
+    toAsk() {
+        this.$router.push('/cyber');
     }
 
     mounted() {

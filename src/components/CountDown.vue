@@ -36,7 +36,7 @@ export default class CountDown extends Vue {
     currentTime: number = Date.now();
 
     timeInterval = 1000;
-    weddingStartTime = new Date('2020/12/03 10:00:00').getTime();
+    weddingStartTime = new Date('2023/06/05 10:00:00').getTime();
 
     targetIntersectionObserver: IntersectionObserver | null = null;
 

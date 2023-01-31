@@ -4,11 +4,11 @@ const days = Math.floor((Date.now() - new Date('2022/06/16').getTime()) / 1000 /
 
 export default {
     // Home
-    year: '2020',
-    month: '12',
-    day: '03',
+    year: '2023',
+    month: '06',
+    day: '05',
     time: '上午 10:00',
-    location: '山东省青岛市即墨区',
+    location: '广西省南宁市',
     locationDesc: '详细地址待定', // 黄河一路68号
 
     // Couple
@@ -18,8 +18,8 @@ export default {
     femaleLastName: '湾',
     famelaeAvatar: `https://cdn.zhusun.club/female_avatar.jpeg?${avatarSuffix}`,
     maleAvatar: `https://cdn.zhusun.club/male_avatar.jpeg?${avatarSuffix}`,
-    maleDesc: `我是孙修国, 今生有幸遇到了👉这只, 我们已经在一起${days}天啦！`,
-    femaleDesc: '我是祝佳儿, 我在工作第二年认识了👈这只, 我..我遇人不淑啊！',
+    maleDesc: `我是黄圣君, 今生有幸遇到了👉这只, 我们已经在一起${days}天啦！`,
+    femaleDesc: '我是祝佳儿, 我认识了👈这只, 我..我遇人不淑啊！',
 
     // QuotaFrase
     frase: '我们彼此会相互守候，相互支持，共度余生。',

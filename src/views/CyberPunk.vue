@@ -1,29 +1,12 @@
 <template>
     <div class="number-select-mask" @touchmove.prevent @click="onClickRoot">
-        <div v-if="!showQuestion">
-            <div v-for="(text, index) in CYBERPUNK_TEXT_LIST" :key="text + index">
-                <CyberpunkTextContainer :text="text" v-if="index === currentDisplayTextIdx" />
-            </div>
+        <div v-for="(text, index) in CYBERPUNK_TEXT_LIST" :key="text + index">
+            <CyberpunkTextContainer :text="text" v-if="index === currentDisplayTextIdx" />
         </div>
 
-        <div class="grid" @mousemove="handleMouseMove" @mouseleave="handleMouseLeave" v-show="showQuestion">
-            <!-- 第一层：网格 -->
-            <ul class="grid-list grid-border" ref="gridBorderContainer" :style="maskStyle">
-                <li class="grid-item" v-for="(item, index) in digitalMatrix" :key="item + index"></li>
-            </ul>
-            <!-- 第二层：数字 -->
-            <ul class="grid-list grid-num">
-                <li
-                    v-for="(item, index) in digitalMatrix"
-                    :key="item + index"
-                    class="grid-item"
-                    :class="{ active: selectedDigitalIdx.includes(index) }"
-                    tabindex="0"
-                    @click="onSelect(index)"
-                >
-                    {{ item }}
-                </li>
-            </ul>
+        <div class="btn-wrap" v-if="showBtn">
+            <div class="btn">愿意</div>
+            <div class="btn">非常愿意</div>
         </div>
     </div>
 </template>
@@ -37,7 +20,7 @@ import CyberpunkTextContainer from '../components/CyberpunkTextContainer.vue';
     components: { CyberpunkTextContainer }
 })
 export default class NumberSelectMask extends Vue {
-    readonly CYBERPUNK_TEXT_LIST = ['回答我的问题', '准备好了么', '3', '2', '1'];
+    readonly CYBERPUNK_TEXT_LIST = ['回答我的问题', '准备好了么', '3', '2', '1', '你愿意嫁给我吗?'];
     readonly DEFALUT_MASK_X = -500;
     readonly DEFALUT_MASK_Y = -500;
     digitalMatrix: string[] = [];
@@ -47,7 +30,7 @@ export default class NumberSelectMask extends Vue {
     maskY: number = this.DEFALUT_MASK_Y;
     timer = 0;
     currentDisplayTextIdx: number = 0;
-    showQuestion = false;
+    showBtn = false;
 
     $refs!: {
         gridBorderContainer: HTMLUListElement;
@@ -74,7 +57,7 @@ export default class NumberSelectMask extends Vue {
                 this.timer = setInterval(() => {
                     if (this.currentDisplayTextIdx === this.CYBERPUNK_TEXT_LIST.length - 1) {
                         clearInterval(this.timer);
-                        this.showQuestion = true;
+                        this.showBtn = true;
                         return;
                     }
                     this.currentDisplayTextIdx += 1;
@@ -191,6 +174,20 @@ body {
             color: #666;
             background-color: #fe2;
         }
+    }
+}
+
+.btn-wrap {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .btn {
+        font-size: 3vw;
+        color: #fff;
     }
 }
 .fade-enter-active {
