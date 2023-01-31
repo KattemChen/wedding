@@ -57,15 +57,11 @@ export default class FixedRouteHeader extends Vue {
         },
         {
             name: 'Count Down',
-            anchor: '#count-down'
+            anchor: '#card-count-down'
         },
         {
             name: 'Gallery',
             anchor: '#gallary'
-        },
-        {
-            name: 'Featured People',
-            anchor: '#featured_people'
         }
     ];
 }
